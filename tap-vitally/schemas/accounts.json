@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {"type": "string"},
+        "name": {"type": "string"},
+        "healthScore": {"type": ["null", "number"]},
+        "createdAt" : {"type": "string", "format": "date-time"},
+        "updatedAt" : {"type": "string", "format": "date-time"},
+        "externalId" : {"type": "string"},
+        "accountOwnerId" : {"type": "string"},
+        "mrr" : {"type": ["null", "number"]},
+        "churnedAt" : {"type": ["null", "number"], "format": "date-time"},
+        "nextRenewalDate" : {"type": ["null", "string"], "format": "date-time"},
+        "firstSeenTimeStamp" : {"type": "string", "format": "date-time"},
+        "lastSeenTimeStamp" : {"type": "string", "format": "date-time"},
+        "lastInboundMessageTimestamp" : {"type": "string", "format": "date-time"},
+        "lastOutboundMessageTimestamp" : {"type": "string", "format": "date-time"},
+        "trialEndDate" : {"type": ["null", "number"], "format": "date-time"},
+        "usersCount" : {"type": "integer"},
+        "npsDetractorCount" : {"type": "integer"},
+        "npsPassiveCount" : {"type": "integer"},
+        "npsPromoterCount" : {"type": "integer"},
+        "npsScore" : {"type": ["null", "number"]},
+        "csmId" : {"type": "string"},
+        "accountExecutiveId" : {"type": "string"},
+        "traits" : {"type" : "object"},
+        "keyRoles" : {"type" : "array"}
+        
+        
+
+
+
+
+    }
+}
