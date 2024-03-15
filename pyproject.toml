@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "tap-vitallyapi"
+name = "tap-vitally"
 version = "0.0.1"
 description = "`tap-vitallyapi` is a Singer tap for vitallyapi, built with the Meltano Singer SDK."
 authors = ["FirstName LastName"]
@@ -8,6 +8,9 @@ keywords = [
     "vitallyapi",
 ]
 license = "Apache 2.0"
+packages = [
+    { include = "tap_vitallyapi" },
+]
 
 [tool.poetry.dependencies]
 python = "<3.11,>=3.7.1"
