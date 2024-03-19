@@ -38,4 +38,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 # CLI declaration
-tap-vitallyapi = 'tap_vitallyapi.tap:Tapvitallyapi.cli'
+tap-vitally = 'tap_vitallyapi.tap:Tapvitallyapi.cli'
