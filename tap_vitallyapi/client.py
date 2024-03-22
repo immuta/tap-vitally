@@ -35,7 +35,7 @@ class vitallyapiStream(RESTStream):
         headers = {}
         if "user_agent" in self.config:
             headers["User-Agent"] = self.config.get("user_agent")
-        headers["Authorization"] = self.config.get("api_key")
+        headers["Authorization"] = self.config.get("api_key").strip()
         return headers
         
 
