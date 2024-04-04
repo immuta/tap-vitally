@@ -17,6 +17,7 @@ class AccountsStream(vitallyapiStream):
     path = "/accounts"
     primary_keys = ["id"]
     replication_key = None
+    replication_method = "FULL_TABLE"
     schema_filepath = SCHEMAS_DIR / "accounts.json"
 
 class UsersStream(vitallyapiStream):
@@ -25,6 +26,7 @@ class UsersStream(vitallyapiStream):
     path = "/users"
     primary_keys = ["id"]
     replication_key = None
+    replication_method = "FULL_TABLE"
     schema_filepath = SCHEMAS_DIR / "users.json"
 
 
