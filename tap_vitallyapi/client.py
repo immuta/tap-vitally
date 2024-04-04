@@ -27,7 +27,7 @@ class vitallyapiStream(RESTStream):
     #     return self.config["api_url"]
 
     records_jsonpath = "results[*]"  # Or override `parse_response`.
-    next_page_token_jsonpath = "$.next_page"  # Or override `get_next_page_token`.
+    next_page_token_jsonpath = "$.next"  # Or override `get_next_page_token`.
     
     @property
     def http_headers(self) -> dict:
