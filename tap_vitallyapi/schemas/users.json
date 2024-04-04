@@ -19,7 +19,7 @@
         "deactivatedAt": {"type": ["null", "string"], "format": "date-time"},
         "segments": {"type": "array"},
         "joinDate": {"type": ["null", "string"], "format": "date-time"},
-        "accounts": {"type": "array"},
+        "accounts": {"type": "array"}
         
 
 
