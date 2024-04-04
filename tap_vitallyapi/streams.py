@@ -18,6 +18,13 @@ class AccountsStream(vitallyapiStream):
     primary_keys = ["id"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "accounts.json"
-        
+
+class UsersStream(vitallyapiStream):
+    """Define custom stream."""
+    name = "users"
+    path = "/users"
+    primary_keys = ["id"]
+    replication_key = None
+    schema_filepath = SCHEMAS_DIR / "users.json"
 
 
