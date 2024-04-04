@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {"type": "string"},
+        "name": {"type": ["null", "string"]},
+        "email": {"type": ["null", "string"]},
+        "createdAt" : {"type": "string", "format": "date-time"},
+        "updatedAt" : {"type": "string", "format": "date-time"},
+        "externalId" : {"type": "string"},
+        "firstKnown" : {"type": "string", "format": "date-time"},
+        "lastSeenTimeStamp" : {"type": "string", "format": "date-time"},
+        "lastInboundMessageTimestamp" : {"type": "string", "format": "date-time"},
+        "lastOutboundMessageTimestamp" : {"type": "string", "format": "date-time"},
+        "npsLastScore" : {"type": ["null","integer"]},
+        "npsLastFeedback" : {"type": ["null","string"]},
+        "npsLastRespondedAt": {"type": ["null", "string"], "format": "date-time"},
+        "unsubscribedFromConversations": {"type": "boolean"},
+        "unsubscribedFromConversationsAt" : {"type": ["null", "string"], "format": "date-time"},
+        "deactivatedAt": {"type": ["null", "string"], "format": "date-time"},
+        "segments": {"type": "array"},
+        "joinDate": {"type": ["null", "string"], "format": "date-time"},
+        "accounts": {"type": "array"},
+        
+
+
+
+
+    }
+}  
