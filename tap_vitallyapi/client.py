@@ -62,10 +62,10 @@ class vitallyapiStream(RESTStream):
     ) -> Dict[str, Any]:
         """Return a dictionary of values to be used in URL parameterization."""
         params: dict = {
-            "limit":3
+            "limit":100,
         }
         if next_page_token:
-            params["page"] = next_page_token
+            params["from"] = next_page_token
         if self.replication_key:
             params["sort"] = "asc"
             params["order_by"] = self.replication_key
