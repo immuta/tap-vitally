@@ -19,11 +19,20 @@
         "deactivatedAt": {"type": ["null", "string"], "format": "date-time"},
         "segments": {"type": "array"},
         "joinDate": {"type": ["null", "string"], "format": "date-time"},
-        "accounts": {"type": "array"}
-        
-
-
-
-
+        "accounts": {"type": "array"},
+        "traits": {
+            "type": "object",
+            "vitally.custom.customerPersona": {"type": ["null","array"]},
+            "sfdc.Id": {"type": ["null","string"]},
+            "ACCOUNT_ID": {"type": ["null","string"]},
+            "sfdc.Title": {"type": ["null","string"]},
+            "sfdc.AccountId": {"type": ["null","string"]},
+            "sfdc.Status__c": {"type": ["null","boolean"]},
+            "sfdc.Account_Health__c": {"type": ["null","string"]},
+            "sfdc.Support_Contact__c": {"type": ["null","boolean"]},
+            "sfdc.Customer_Success_Contact__c": {"type": ["null","boolean"]},
+            "sfdc.Incident_Response_Contact__c": {"type": ["null","boolean"]},
+            "sfdc.Vitally_Active_Support_Contact__c": {"type": ["null","boolean"]}
+        }
     }
 }  
